@@ -29,6 +29,18 @@
   code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px;
          font-size: .92em; }
   li { margin: .3rem 0; }
+  figure { margin: 1.6rem 0; }
+  .sema { width: 100%; height: auto; display: block;
+          --ana: #1f6f4a; --metin: #1a1a18; --soluk: #6b6b66; --cizgi: #d8d8d2;
+          --kutu: #eef6f1; --zemin: #fafaf8; --yuzey: #fff; --hata: #b3261e;
+          --kutuEksi: #fdf2f2; --vurgu: #d5e8d4; --vurguAcik: #f2f9f1; }
+  @media (prefers-color-scheme: dark) {
+    .sema { --ana: #6fbf94; --metin: #e8e8e4; --soluk: #a0a09a; --cizgi: #3a3c3f;
+            --kutu: #1e2b24; --zemin: #1c1d1f; --yuzey: #202225; --hata: #f2857c;
+            --kutuEksi: #2b1f1f; --vurgu: #26402f; --vurguAcik: #1d2620; }
+  }
+  figcaption { color: var(--soluk); font-size: .88rem; text-align: center;
+               margin-top: .5rem; }
 </style>
 </head>
 <body>

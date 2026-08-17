@@ -29,6 +29,18 @@
   code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px;
          font-size: .92em; }
   li { margin: .3rem 0; }
+  figure { margin: 1.6rem 0; }
+  .sema { width: 100%; height: auto; display: block;
+          --ana: #1f6f4a; --metin: #1a1a18; --soluk: #6b6b66; --cizgi: #d8d8d2;
+          --kutu: #eef6f1; --zemin: #fafaf8; --yuzey: #fff; --hata: #b3261e;
+          --kutuEksi: #fdf2f2; --vurgu: #d5e8d4; --vurguAcik: #f2f9f1; }
+  @media (prefers-color-scheme: dark) {
+    .sema { --ana: #6fbf94; --metin: #e8e8e4; --soluk: #a0a09a; --cizgi: #3a3c3f;
+            --kutu: #1e2b24; --zemin: #1c1d1f; --yuzey: #202225; --hata: #f2857c;
+            --kutuEksi: #2b1f1f; --vurgu: #26402f; --vurguAcik: #1d2620; }
+  }
+  figcaption { color: var(--soluk); font-size: .88rem; text-align: center;
+               margin-top: .5rem; }
 </style>
 </head>
 <body>
@@ -36,20 +48,89 @@
   <a href="kvkk.html">KVKK Aydınlatma Metni</a>
   <strong>Nasıl kullanılır</strong></nav>
 <h1>TabloMatik AI nasıl kullanılır</h1>
-<p>Bu rehber, uygulamayı ilk kez açan bir mali müşavirin <strong>kimseye sormadan</strong> kurabilmesi için yazıldı. Sırayla okuyun; her adım bir öncekinin üstüne biniyor.</p>
+<p>Bu rehber, uygulamayı ilk kez açan bir mali müşavirin <strong>kimseye sormadan</strong> kullanabilmesi için yazıldı. Sırayla takip edip ilerlerseniz uygulamayı rahatlıkla kullanabilirsiniz.</p>
 <hr>
 <h2>Kısaca ne yapıyor</h2>
-<p>Fiş ve yazar kasa Z raporu fotoğraflarını okuyup <strong>Excel tablosuna</strong> çeviriyor. Siz fotoğrafı çekiyorsunuz, tablo hazır geliyor.</p>
+<p>Fiş veya yazar kasa Z raporu fotoğraflarını okuyup, kullanıcının istemiş olduğu tasarım ve hesaplama yöntemi ile <strong>Excel tablosuna</strong> çeviriyor.</p>
+<p>Siz ilgili mükellefin, ilgili ayı için fiş veya Z raporu belgelerinin fotoğraflarını çekiyorsunuz, tablo hazır geliyor.</p>
 <p>Yazar kasa Z raporlarında bir adım daha var: hangi satırın hangi kolona yazılacağını <strong>bir kez</strong> tarif ediyorsunuz, sonraki bütün raporlar o tarifle okunuyor.</p>
+<figure><svg class="sema" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img"
+     aria-label="Genel akış: mükellef aç, yazar kasayı tanıt, tarifi kur, fiş çek, Excel üret">
+  <style>
+    .kutu { fill: var(--kutu, #eef6f1); stroke: var(--ana, #1f6f4a); stroke-width: 2; }
+    .kutuIkincil { fill: none; stroke: var(--cizgi, #d8d8d2); stroke-width: 2; stroke-dasharray: 5 4; }
+    .no { fill: var(--ana, #1f6f4a); }
+    .noYazi { fill: #fff; font: 700 13px sans-serif; text-anchor: middle; }
+    .baslik { fill: var(--metin, #1a1a18); font: 600 14px sans-serif; text-anchor: middle; }
+    .alt { fill: var(--soluk, #6b6b66); font: 12px sans-serif; text-anchor: middle; }
+    .ok { stroke: var(--ana, #1f6f4a); stroke-width: 2; fill: none; }
+  </style>
+  <defs>
+    <marker id="uc" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9 z" fill="var(--ana, #1f6f4a)"/>
+    </marker>
+  </defs>
+
+  <g>
+    <rect class="kutu" x="20" y="40" width="150" height="66" rx="10"/>
+    <circle class="no" cx="40" cy="60" r="12"/><text class="noYazi" x="40" y="65">1</text>
+    <text class="baslik" x="95" y="86">Mükellef açın</text>
+    <text class="alt" x="95" y="103">unvan ve VKN</text>
+  </g>
+
+  <line class="ok" x1="176" y1="73" x2="212" y2="73" marker-end="url(#uc)"/>
+
+  <g>
+    <rect class="kutu" x="218" y="40" width="170" height="66" rx="10"/>
+    <circle class="no" cx="238" cy="60" r="12"/><text class="noYazi" x="238" y="65">2</text>
+    <text class="baslik" x="303" y="86">Yazar kasayı tanıtın</text>
+    <text class="alt" x="303" y="103">ad ve EKÜ numarası</text>
+  </g>
+
+  <line class="ok" x1="394" y1="73" x2="430" y2="73" marker-end="url(#uc)"/>
+
+  <g>
+    <rect class="kutu" x="436" y="40" width="170" height="66" rx="10"/>
+    <circle class="no" cx="456" cy="60" r="12"/><text class="noYazi" x="456" y="65">3</text>
+    <text class="baslik" x="521" y="86">Tarifi kurun</text>
+    <text class="alt" x="521" y="103">bir kez, kasa başına</text>
+  </g>
+
+  <path class="ok" d="M606 73 L648 73 L648 150 L60 150 L60 186" marker-end="url(#uc)"/>
+
+  <g>
+    <rect class="kutu" x="20" y="192" width="170" height="66" rx="10"/>
+    <circle class="no" cx="40" cy="212" r="12"/><text class="noYazi" x="40" y="217">4</text>
+    <text class="baslik" x="105" y="238">Fiş / Z raporu çekin</text>
+    <text class="alt" x="105" y="255">aya fotoğraflayın</text>
+  </g>
+
+  <line class="ok" x1="196" y1="225" x2="232" y2="225" marker-end="url(#uc)"/>
+
+  <g>
+    <rect class="kutu" x="238" y="192" width="170" height="66" rx="10"/>
+    <circle class="no" cx="258" cy="212" r="12"/><text class="noYazi" x="258" y="217">5</text>
+    <text class="baslik" x="323" y="238">Excel üretin</text>
+    <text class="alt" x="323" y="255">paylaşın veya kaydedin</text>
+  </g>
+
+  <g>
+    <rect class="kutuIkincil" x="436" y="192" width="240" height="66" rx="10"/>
+    <text class="baslik" x="556" y="222">2 ve 3 yalnızca bir kez</text>
+    <text class="alt" x="556" y="242">sonraki aylarda 4 ve 5 yeter</text>
+  </g>
+</svg>
+<figcaption>Baştan sona akış. 2 ve 3 yalnızca bir kez yapılır; sonraki aylarda 4 ve 5 yeter.</figcaption></figure>
 <hr>
 <h2>1. Mükellef açın</h2>
 <p>Ana ekrandan <strong>Mükellefler</strong> → <strong>Yeni mükellef</strong>.</p>
-<p>Unvan ve vergi numarasını yazın. Mükellefi açtığınızda <strong>on iki ay</strong> düğme olarak karşınıza gelir; ayrıca "dönem aç" diye bir işlem yoktur.</p>
+<p>Unvan ve vergi numarasını yazın. Mükellefi açtığınızda <strong>12 ay</strong> hazır olarak karşınıza gelir, ayrıca "dönem aç" diye bir işlem yoktur.</p>
 <hr>
 <h2>2. Yazar kasayı tanıtın</h2>
+<p>Mükellef açılıp tıklandığı zaman, eğer yazar kasası var ise ilk yapılması gereken işlem yazar kasalarının formatını uygulamaya tanıtmak olmalı. Gün sonu yazar kasa fişlerinden <strong>en yoğun</strong> olanı bulun (çok fazla kalem sayısı olması faydalı olur) ve uygulamaya okutun.</p>
 <p>Bu adım yalnızca <strong>yazar kasa Z raporu</strong> okutacaksanız gerekli. Yalnızca fiş okutacaksanız atlayın.</p>
 <p>Mükellefin içinde <strong>Yazar kasalar</strong> → <strong>Ekle ve tarifini kur</strong>.</p>
-<ul><li><strong>Kasanın adı:</strong> işletmede tanıdığınız ad ("1 nolu kasa" gibi). Bu ad Excel'de görünür.</li><li><strong>EKÜ numarası:</strong> Z raporunun altında <code>EKÜ NO</code> diye yazar. Girerseniz o kasanın raporları kendiliğinden doğru kasaya bağlanır ve araya karışan başka bir kasanın fişi fark edilir. Baştaki sıfırları da yazın.</li></ul>
+<ul><li><strong>Kasanın adı:</strong> işletmede tanıdığınız ad ("1 nolu kasa" gibi) veya Z raporunda yazan kasa adı. Bu ad Excel'de görünür.</li><li><strong>EKÜ numarası:</strong> Z raporunun altında <code>EKÜ NO</code> diye yazar. Girerseniz o kasanın raporları kendiliğinden doğru kasaya bağlanır ve araya karışan başka bir kasanın fişi fark edilir. Baştaki sıfırları da yazın.</li></ul>
 <p>Mükellefin dört kasası varsa dördünü ayrı ayrı tanıtın; her kasanın Z raporu biçimi farklı olabiliyor.</p>
 <hr>
 <h2>3. Kasanın tarifini kurun</h2>
@@ -61,10 +142,135 @@
 <p><strong>Kolon ekle</strong> düğmesine basın. Ekran ikiye bölünür:</p>
 <ul><li><strong>Solda</strong> belgedeki satırlar — departman ve ödeme diye iki grup</li><li><strong>Sağda</strong> bu kolona girenler</li></ul>
 <p>Soldaki bir satıra dokunun, sağa geçer. Yanlış seçtiyseniz sağdakine dokunun, sola döner. Sağ panelin üstüne kolonun adını yazıp <strong>Ekle</strong>'ye basın.</p>
+<figure><svg class="sema" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" role="img"
+     aria-label="Tarif ekranı: solda belgedeki satırlar, sağda kolona girenler; dokunulan satır sağa geçer">
+  <style>
+    .panel { fill: var(--yuzey, #fff); stroke: var(--cizgi, #d8d8d2); stroke-width: 2; }
+    .satir { fill: var(--zemin, #fafaf8); stroke: var(--cizgi, #d8d8d2); stroke-width: 1.5; }
+    .satirSecili { fill: var(--kutu, #eef6f1); stroke: var(--ana, #1f6f4a); stroke-width: 1.5; }
+    .grup { fill: var(--ana, #1f6f4a); font: 700 11px sans-serif; letter-spacing: .4px; }
+    .ad { fill: var(--metin, #1a1a18); font: 600 13px sans-serif; }
+    .adSecili { fill: var(--ana, #1f6f4a); font: 600 13px sans-serif; }
+    .tutar { fill: var(--soluk, #6b6b66); font: 11px sans-serif; }
+    .baslik { fill: var(--soluk, #6b6b66); font: 700 12px sans-serif; }
+    .ok { stroke: var(--ana, #1f6f4a); stroke-width: 2.5; fill: none; }
+    .toplam { fill: var(--ana, #1f6f4a); font: 700 14px sans-serif; text-anchor: end; }
+    .not { fill: var(--soluk, #6b6b66); font: italic 12px sans-serif; }
+    .girdi { fill: none; stroke: var(--ana, #1f6f4a); stroke-width: 2; }
+  </style>
+  <defs>
+    <marker id="uc2" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="var(--ana, #1f6f4a)"/>
+    </marker>
+  </defs>
+
+  <!-- SOL PANEL -->
+  <rect class="panel" x="10" y="30" width="300" height="350" rx="10"/>
+  <text class="baslik" x="26" y="52">BELGEDEKİ SATIRLAR</text>
+
+  <text class="grup" x="26" y="76">DEPARTMAN BİLGİLERİ</text>
+  <rect class="satir" x="22" y="84" width="276" height="34" rx="6"/>
+  <text class="ad" x="34" y="99">ET</text><text class="tutar" x="34" y="112">101.691,64</text>
+  <rect class="satir" x="22" y="124" width="276" height="34" rx="6"/>
+  <text class="ad" x="34" y="139">TAVUK</text><text class="tutar" x="34" y="152">31.258,58</text>
+  <rect class="satir" x="22" y="164" width="276" height="34" rx="6"/>
+  <text class="ad" x="34" y="179">TRENDYOL</text><text class="tutar" x="34" y="192">3.656,25</text>
+  <rect class="satir" x="22" y="204" width="276" height="34" rx="6"/>
+  <text class="ad" x="34" y="219">GETİR</text><text class="tutar" x="34" y="232">5.225,50</text>
+
+  <text class="grup" x="26" y="262">ÖDEME BİLGİLERİ</text>
+  <rect class="satir" x="22" y="270" width="276" height="34" rx="6"/>
+  <text class="ad" x="34" y="285">NAKİT</text><text class="tutar" x="34" y="298">14.611,04</text>
+  <rect class="satir" x="22" y="310" width="276" height="34" rx="6"/>
+  <text class="ad" x="34" y="325">KREDİ</text><text class="tutar" x="34" y="338">122.144,15</text>
+
+  <!-- DOKUNUNCA SAĞA GEÇER -->
+  <path class="ok" d="M304 181 C 340 181, 340 150, 386 150" marker-end="url(#uc2)"/>
+  <text class="not" x="316" y="205">dokunun,</text>
+  <text class="not" x="316" y="220">sağa geçer</text>
+
+  <!-- SAĞ PANEL -->
+  <rect class="panel" x="392" y="30" width="318" height="350" rx="10"/>
+  <text class="baslik" x="408" y="52">KOLON ADI</text>
+  <rect class="girdi" x="404" y="60" width="212" height="32" rx="7"/>
+  <text class="ad" x="416" y="81">e-ticaret</text>
+  <rect x="624" y="60" width="72" height="32" rx="7" fill="var(--ana, #1f6f4a)"/>
+  <text x="660" y="81" fill="#fff" font="700 13px sans-serif"
+        style="font:700 13px sans-serif" text-anchor="middle">Ekle</text>
+
+  <rect class="satirSecili" x="404" y="108" width="292" height="38" rx="6"/>
+  <circle cx="424" cy="127" r="11" fill="var(--ana, #1f6f4a)"/>
+  <text x="424" y="132" fill="#fff" style="font:700 15px sans-serif" text-anchor="middle">+</text>
+  <text class="adSecili" x="444" y="123">TRENDYOL</text>
+  <text class="tutar" x="444" y="138">departman · 3.656,25</text>
+
+  <rect class="satirSecili" x="404" y="154" width="292" height="38" rx="6"/>
+  <circle cx="424" cy="173" r="11" fill="var(--ana, #1f6f4a)"/>
+  <text x="424" y="178" fill="#fff" style="font:700 15px sans-serif" text-anchor="middle">+</text>
+  <text class="adSecili" x="444" y="169">GETİR</text>
+  <text class="tutar" x="444" y="184">departman · 5.225,50</text>
+
+  <line x1="404" y1="330" x2="696" y2="330" stroke="var(--ana, #1f6f4a)" stroke-width="1.5"/>
+  <text class="toplam" x="696" y="352">8.881,75</text>
+  <text class="not" x="404" y="352">toplam</text>
+</svg>
+<figcaption>Tarif ekranı: solda belgedeki satırlar, sağda o kolona girenler ve canlı toplam.</figcaption></figure>
 <p><strong>Örnek:</strong> "e-ticaret" adında bir kolon kurmak için soldan TRENDYOL, GETİR ve YEMEK SEPETİ'ne dokunursunuz; üçünün toplamı o kolona yazılır.</p>
 <h3>Bir satırı düşmek isterseniz</h3>
 <p>Sağdaki her satırın önünde yuvarlak bir <strong>+</strong> düğmesi var. Ona dokununca <strong>−</strong> olur ve o satır toplanmaz, düşülür.</p>
 <p><strong>Örnek:</strong> nakit kolonunu kurarken NAKİT'i artı, TRENDYOL ile GETİR'i eksi yaparsınız. Sonuç: nakitten e-ticaret satışları düşülmüş olur.</p>
+<figure><svg class="sema" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 250" role="img"
+     aria-label="Artı eksi düğmesi: eksiye çevrilen satır toplamdan düşülür">
+  <style>
+    .k { fill: var(--kutu, #eef6f1); stroke: var(--ana, #1f6f4a); stroke-width: 1.5; }
+    .ke { fill: var(--kutuEksi, #fdf2f2); stroke: var(--hata, #b3261e); stroke-width: 1.5; }
+    .ad { fill: var(--ana, #1f6f4a); font: 600 13px sans-serif; }
+    .adE { fill: var(--hata, #b3261e); font: 600 13px sans-serif; }
+    .t { fill: var(--soluk, #6b6b66); font: 11px sans-serif; }
+    .tE { fill: var(--hata, #b3261e); font: 11px sans-serif; }
+    .baslik { fill: var(--soluk, #6b6b66); font: 700 12px sans-serif; }
+    .sonuc { fill: var(--metin, #1a1a18); font: 600 14px sans-serif; }
+    .toplam { fill: var(--ana, #1f6f4a); font: 700 15px sans-serif; text-anchor: end; }
+    .not { fill: var(--soluk, #6b6b66); font: italic 12px sans-serif; text-anchor: middle; }
+  </style>
+  <defs>
+    <marker id="uc3" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="var(--soluk, #6b6b66)"/>
+    </marker>
+  </defs>
+
+  <text class="baslik" x="20" y="26">"nakit" KOLONU</text>
+
+  <rect class="k" x="16" y="38" width="300" height="38" rx="6"/>
+  <circle cx="36" cy="57" r="11" fill="var(--ana, #1f6f4a)"/>
+  <text x="36" y="62" fill="#fff" style="font:700 15px sans-serif" text-anchor="middle">+</text>
+  <text class="ad" x="56" y="53">NAKİT</text>
+  <text class="t" x="56" y="68">ödeme · 14.611,04</text>
+
+  <rect class="ke" x="16" y="84" width="300" height="38" rx="6"/>
+  <circle cx="36" cy="103" r="11" fill="var(--hata, #b3261e)"/>
+  <text x="36" y="108" fill="#fff" style="font:700 17px sans-serif" text-anchor="middle">−</text>
+  <text class="adE" x="56" y="99">TRENDYOL</text>
+  <text class="tE" x="56" y="114">departman · −3.656,25</text>
+
+  <rect class="ke" x="16" y="130" width="300" height="38" rx="6"/>
+  <circle cx="36" cy="149" r="11" fill="var(--hata, #b3261e)"/>
+  <text x="36" y="154" fill="#fff" style="font:700 17px sans-serif" text-anchor="middle">−</text>
+  <text class="adE" x="56" y="145">GETİR</text>
+  <text class="tE" x="56" y="160">departman · −5.225,50</text>
+
+  <line x1="16" y1="182" x2="316" y2="182" stroke="var(--ana, #1f6f4a)" stroke-width="1.5"/>
+  <text class="toplam" x="316" y="204">5.729,29</text>
+
+  <line x1="340" y1="103" x2="392" y2="103" stroke="var(--soluk, #6b6b66)"
+        stroke-width="2" marker-end="url(#uc3)"/>
+
+  <text class="sonuc" x="410" y="80">Yuvarlak düğmeye dokununca</text>
+  <text class="sonuc" x="410" y="102">+ işareti − olur.</text>
+  <text class="sonuc" x="410" y="132">O satır toplanmaz, düşülür.</text>
+  <text class="not" x="540" y="176">14.611,04 − 3.656,25 − 5.225,50 = 5.729,29</text>
+</svg>
+<figcaption>Eksiye çevrilen satır kırmızıya döner ve toplamdan düşülür.</figcaption></figure>
 <h3>Kurduğunuz bir kolonu yeniden kullanmak</h3>
 <p>Sol panelin altında <strong>Kurduğunuz kolonlar</strong> diye bir bölüm var. Oradaki <strong>− düş</strong> düğmesi, o kolonun bütün satırlarını eksi işaretle ekler. "Nakit eksi e-ticaret" bir dokunuşta kurulur.</p>
 <h3>Kendiliğinden gelen kolonlar</h3>
@@ -88,6 +294,61 @@
 <p>Ayın içinde <strong>Excel oluştur</strong>. Dosya hazırlanır, paylaşabilir ya da kaydedebilirsiniz.</p>
 <p>Dosyanın içinde:</p>
 <ul><li><strong>Solda</strong> her belgenin fiş alanları (tarih, unvan, VKN, matrah, KDV…)</li><li><strong>Sağda yeşil zeminde</strong> sizin kurduğunuz kasa kolonları</li><li><strong>Kontrol Uyarıları</strong> sayfası — bir şey ters gittiyse orada yazar</li></ul>
+<figure><svg class="sema" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 230" role="img"
+     aria-label="Excel düzeni: solda fiş alanları, ortada kendiliğinden gelen satırlar, sağda yeşil zeminde sizin kolonlarınız">
+  <style>
+    .h { fill: var(--zemin, #fafaf8); stroke: var(--cizgi, #d8d8d2); stroke-width: 1; }
+    .hY { fill: var(--vurgu, #d5e8d4); stroke: var(--cizgi, #d8d8d2); stroke-width: 1; }
+    .hv { fill: var(--yuzey, #fff); stroke: var(--cizgi, #d8d8d2); stroke-width: 1; }
+    .hvY { fill: var(--vurguAcik, #f2f9f1); stroke: var(--cizgi, #d8d8d2); stroke-width: 1; }
+    .b { fill: var(--metin, #1a1a18); font: 700 10px sans-serif; text-anchor: middle; }
+    .d { fill: var(--soluk, #6b6b66); font: 10px sans-serif; text-anchor: middle; }
+    .et { fill: var(--soluk, #6b6b66); font: 600 12px sans-serif; text-anchor: middle; }
+    .cizgi { stroke: var(--soluk, #6b6b66); stroke-width: 1; }
+  </style>
+
+  <g>
+    <rect class="h" x="10" y="60" width="86" height="26"/><text class="b" x="53" y="77">Tarih</text>
+    <rect class="h" x="96" y="60" width="96" height="26"/><text class="b" x="144" y="77">Firma Ünvanı</text>
+    <rect class="h" x="192" y="60" width="76" height="26"/><text class="b" x="230" y="77">Matrah %1</text>
+    <rect class="h" x="268" y="60" width="66" height="26"/><text class="b" x="301" y="77">KDV %1</text>
+    <rect class="h" x="334" y="60" width="76" height="26"/><text class="b" x="372" y="77">Genel Top.</text>
+    <rect class="h" x="410" y="60" width="56" height="26"/><text class="b" x="438" y="77">ET</text>
+    <rect class="h" x="466" y="60" width="66" height="26"/><text class="b" x="499" y="77">TAVUK</text>
+    <rect class="hY" x="532" y="60" width="58" height="26"/><text class="b" x="561" y="77">nakit</text>
+    <rect class="hY" x="590" y="60" width="60" height="26"/><text class="b" x="620" y="77">kredi</text>
+    <rect class="hY" x="650" y="60" width="60" height="26"/><text class="b" x="680" y="77">e-tic.</text>
+  </g>
+  <g>
+    <rect class="hv" x="10" y="86" width="86" height="24"/><text class="d" x="53" y="102">22.07.2026</text>
+    <rect class="hv" x="96" y="86" width="96" height="24"/><text class="d" x="144" y="102">TRAKYA ET</text>
+    <rect class="hv" x="192" y="86" width="76" height="24"/><text class="d" x="230" y="102">140.427,72</text>
+    <rect class="hv" x="268" y="86" width="66" height="24"/><text class="d" x="301" y="102">1.404,25</text>
+    <rect class="hv" x="334" y="86" width="76" height="24"/><text class="d" x="372" y="102">141.831,97</text>
+    <rect class="hv" x="410" y="86" width="56" height="24"/><text class="d" x="438" y="102">101.691</text>
+    <rect class="hv" x="466" y="86" width="66" height="24"/><text class="d" x="499" y="102">31.258,58</text>
+    <rect class="hvY" x="532" y="86" width="58" height="24"/><text class="d" x="561" y="102">5.729,29</text>
+    <rect class="hvY" x="590" y="86" width="60" height="24"/><text class="d" x="620" y="102">125.837</text>
+    <rect class="hvY" x="650" y="86" width="60" height="24"/><text class="d" x="680" y="102">8.881,75</text>
+  </g>
+
+  <line class="cizgi" x1="10" y1="132" x2="410" y2="132"/>
+  <line class="cizgi" x1="10" y1="126" x2="10" y2="138"/>
+  <line class="cizgi" x1="410" y1="126" x2="410" y2="138"/>
+  <text class="et" x="210" y="154">Fişin kendi alanları</text>
+  <text class="d" x="210" y="170">her belgede aynı</text>
+
+  <line class="cizgi" x1="410" y1="132" x2="532" y2="132"/>
+  <line class="cizgi" x1="532" y1="126" x2="532" y2="138"/>
+  <text class="et" x="471" y="154">Kendiliğinden</text>
+  <text class="d" x="471" y="170">atanmamış satırlar</text>
+
+  <line class="cizgi" x1="532" y1="132" x2="710" y2="132"/>
+  <line class="cizgi" x1="710" y1="126" x2="710" y2="138"/>
+  <text class="et" x="621" y="154">Sizin kolonlarınız</text>
+  <text class="d" x="621" y="170">yeşil zeminde</text>
+</svg>
+<figcaption>Excel'in düzeni: solda fişin kendi alanları, ortada kendiliğinden gelen satırlar, sağda yeşil zeminde sizin kolonlarınız.</figcaption></figure>
 <blockquote><strong>Önemli:</strong> Okunmamış fiş varken Excel üretemezsiniz. Üretilseydi o fişler dosyaya hiç girmez ve kimse fark etmezdi.</blockquote>
 <hr>
 <h2>7. Kolonların sırasını kendiniz belirleyin</h2>
