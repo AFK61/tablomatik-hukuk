@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nasıl kullanılır — TabloMatik AI</title>
+<style>
+  :root { color-scheme: light dark; --ana: #1f6f4a; --cizgi: #d8d8d2; --soluk: #6b6b66; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ana: #6fbf94; --cizgi: #3a3c3f; --soluk: #a0a09a; }
+  }
+  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+         max-width: 46rem; margin: 0 auto; padding: 2rem 1.2rem 5rem;
+         line-height: 1.65; color: #1a1a18; background: #fff; }
+  @media (prefers-color-scheme: dark) { body { color: #e8e8e4; background: #17181a; } }
+  h1 { font-size: 1.65rem; line-height: 1.25; }
+  h2 { font-size: 1.25rem; margin-top: 2.4rem; }
+  h3 { font-size: 1.05rem; margin-top: 1.8rem; }
+  nav { margin-bottom: 2rem; font-size: .95rem; border-bottom: 1px solid var(--cizgi);
+        padding-bottom: 1rem; }
+  nav a { color: var(--ana); margin-right: 1.2rem; text-decoration: none; }
+  nav a:hover { text-decoration: underline; }
+  nav strong { color: inherit; margin-right: 1.2rem; }
+  blockquote { border-left: 3px solid var(--ana); margin: 1.2rem 0; padding: .2rem 0 .2rem 1rem;
+               color: var(--soluk); }
+  hr { border: none; border-top: 1px solid var(--cizgi); margin: 2.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  td, th { border: 1px solid var(--cizgi); padding: .45rem .6rem; text-align: left; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px;
+         font-size: .92em; }
+  li { margin: .3rem 0; }
+</style>
+</head>
+<body>
+<nav><a href="index.html">Gizlilik Politikası</a>
+  <a href="kvkk.html">KVKK Aydınlatma Metni</a>
+  <strong>Nasıl kullanılır</strong></nav>
+<h1>TabloMatik AI nasıl kullanılır</h1>
+<p>Bu rehber, uygulamayı ilk kez açan bir mali müşavirin <strong>kimseye sormadan</strong> kurabilmesi için yazıldı. Sırayla okuyun; her adım bir öncekinin üstüne biniyor.</p>
+<hr>
+<h2>Kısaca ne yapıyor</h2>
+<p>Fiş ve yazar kasa Z raporu fotoğraflarını okuyup <strong>Excel tablosuna</strong> çeviriyor. Siz fotoğrafı çekiyorsunuz, tablo hazır geliyor.</p>
+<p>Yazar kasa Z raporlarında bir adım daha var: hangi satırın hangi kolona yazılacağını <strong>bir kez</strong> tarif ediyorsunuz, sonraki bütün raporlar o tarifle okunuyor.</p>
+<hr>
+<h2>1. Mükellef açın</h2>
+<p>Ana ekrandan <strong>Mükellefler</strong> → <strong>Yeni mükellef</strong>.</p>
+<p>Unvan ve vergi numarasını yazın. Mükellefi açtığınızda <strong>on iki ay</strong> düğme olarak karşınıza gelir; ayrıca "dönem aç" diye bir işlem yoktur.</p>
+<hr>
+<h2>2. Yazar kasayı tanıtın</h2>
+<p>Bu adım yalnızca <strong>yazar kasa Z raporu</strong> okutacaksanız gerekli. Yalnızca fiş okutacaksanız atlayın.</p>
+<p>Mükellefin içinde <strong>Yazar kasalar</strong> → <strong>Ekle ve tarifini kur</strong>.</p>
+<ul><li><strong>Kasanın adı:</strong> işletmede tanıdığınız ad ("1 nolu kasa" gibi). Bu ad Excel'de görünür.</li><li><strong>EKÜ numarası:</strong> Z raporunun altında <code>EKÜ NO</code> diye yazar. Girerseniz o kasanın raporları kendiliğinden doğru kasaya bağlanır ve araya karışan başka bir kasanın fişi fark edilir. Baştaki sıfırları da yazın.</li></ul>
+<p>Mükellefin dört kasası varsa dördünü ayrı ayrı tanıtın; her kasanın Z raporu biçimi farklı olabiliyor.</p>
+<hr>
+<h2>3. Kasanın tarifini kurun</h2>
+<p>Kasaya dokunun, sonra sırayla:</p>
+<h3>Önce örnek bir Z raporu çekin</h3>
+<p><strong>Örnek Z raporu çek</strong> düğmesine basıp bir Z raporunu fotoğraflayın. Uygulama belgedeki bütün satırları okuyup size listeler.</p>
+<blockquote><strong>İpucu:</strong> Fotoğrafı iyi ışıkta, düz ve yakın çekin. Adlar yanlış okunursa tarif tutmaz.</blockquote>
+<h3>Sonra kolonlarınızı kurun</h3>
+<p><strong>Kolon ekle</strong> düğmesine basın. Ekran ikiye bölünür:</p>
+<ul><li><strong>Solda</strong> belgedeki satırlar — departman ve ödeme diye iki grup</li><li><strong>Sağda</strong> bu kolona girenler</li></ul>
+<p>Soldaki bir satıra dokunun, sağa geçer. Yanlış seçtiyseniz sağdakine dokunun, sola döner. Sağ panelin üstüne kolonun adını yazıp <strong>Ekle</strong>'ye basın.</p>
+<p><strong>Örnek:</strong> "e-ticaret" adında bir kolon kurmak için soldan TRENDYOL, GETİR ve YEMEK SEPETİ'ne dokunursunuz; üçünün toplamı o kolona yazılır.</p>
+<h3>Bir satırı düşmek isterseniz</h3>
+<p>Sağdaki her satırın önünde yuvarlak bir <strong>+</strong> düğmesi var. Ona dokununca <strong>−</strong> olur ve o satır toplanmaz, düşülür.</p>
+<p><strong>Örnek:</strong> nakit kolonunu kurarken NAKİT'i artı, TRENDYOL ile GETİR'i eksi yaparsınız. Sonuç: nakitten e-ticaret satışları düşülmüş olur.</p>
+<h3>Kurduğunuz bir kolonu yeniden kullanmak</h3>
+<p>Sol panelin altında <strong>Kurduğunuz kolonlar</strong> diye bir bölüm var. Oradaki <strong>− düş</strong> düğmesi, o kolonun bütün satırlarını eksi işaretle ekler. "Nakit eksi e-ticaret" bir dokunuşta kurulur.</p>
+<h3>Kendiliğinden gelen kolonlar</h3>
+<p>Şunlar için kolon kurmanıza <strong>gerek yok</strong>, hepsi Excel'e kendiliğinden gelir:</p>
+<ul><li>tarih, rapor no, genel toplam</li><li>matrah ve belgede geçen her KDV oranı</li><li>hiçbir kolona atamadığınız departman ve ödeme satırları</li></ul>
+<p>Siz yalnızca <strong>karar gerektiren</strong> kolonları kurarsınız: neyin neyle toplanacağı ve neyin düşüleceği.</p>
+<h3>Doğru kurduğunuzu nasıl anlarsınız</h3>
+<p>Ekranın altında <strong>"Excel'de görünecek satır"</strong> başlığı var. Kurduğunuz tarif örnek rapora uygulanıp gösteriliyor.</p>
+<p>Ölçüt şu: <strong>ödeme kolonlarının toplamı belgenin genel toplamını tutmalı.</strong> Tutuyorsa tarif doğrudur.</p>
+<hr>
+<h2>4. Fiş ve Z raporu çekin</h2>
+<p>Mükellefin içinden bir <strong>ay</strong> düğmesine dokunun, sonra <strong>Fiş çek</strong>.</p>
+<ul><li>Normal fiş de, Z raporu da aynı düğmeyle çekilir. Uygulama belgenin ne olduğunu kendisi anlar.</li><li>İlk fotoğraftan önce bir <strong>onay ekranı</strong> çıkar. Kişisel veri işlendiği için zorunludur; onaylamadan okuma yapılmaz.</li><li>Beşe kadar fiş <strong>anında</strong> okunur (yarım dakika). Daha fazlası kuyruğa girer ve biraz daha uzun sürer; uygulamayı kapatabilirsiniz, iş arkada sürer.</li></ul>
+<hr>
+<h2>5. Okunanları gözden geçirin</h2>
+<p><strong>Fişi gözden geçir</strong> düğmesinden okunan alanları görürsünüz.</p>
+<ul><li><strong>Yeşil alanlar</strong> emin olduklarımız</li><li><strong>Sarı alanlar</strong> emin olmadıklarımız</li></ul>
+<p>Sarı alanları doldurup kaydedin ya da fotoğrafı yeniden çekin. Yanlış olduğunu düşündüğünüz bir fişi silip yeniden çekebilirsiniz.</p>
+<hr>
+<h2>6. Excel'i üretin</h2>
+<p>Ayın içinde <strong>Excel oluştur</strong>. Dosya hazırlanır, paylaşabilir ya da kaydedebilirsiniz.</p>
+<p>Dosyanın içinde:</p>
+<ul><li><strong>Solda</strong> her belgenin fiş alanları (tarih, unvan, VKN, matrah, KDV…)</li><li><strong>Sağda yeşil zeminde</strong> sizin kurduğunuz kasa kolonları</li><li><strong>Kontrol Uyarıları</strong> sayfası — bir şey ters gittiyse orada yazar</li></ul>
+<blockquote><strong>Önemli:</strong> Okunmamış fiş varken Excel üretemezsiniz. Üretilseydi o fişler dosyaya hiç girmez ve kimse fark etmezdi.</blockquote>
+<hr>
+<h2>7. Kolonların sırasını kendiniz belirleyin</h2>
+<p>Kasanın içinde <strong>Excel düzeni</strong> düğmesi var.</p>
+<p>Soldan istediğiniz kolonlara dokunun, <strong>▲▼</strong> ile sıralayın. Seçtikleriniz Excel'e <strong>"Özel İstek Sayfası"</strong> adıyla ayrı bir sayfa olarak eklenir; mevcut sayfalar değişmez.</p>
+<p>Muhasebe programınıza aktarırken hangi sütunları hangi sırada istiyorsanız burada kurarsınız.</p>
+<hr>
+<h2>Sık karşılaşılanlar</h2>
+<p><strong>Bir kolon boş çıktı, rakam gelmedi.</strong> Belgedeki ad yanlış okunmuş olabilir. Excel'in "Kontrol Uyarıları" sayfasına bakın; tarifte olup belgede bulunamayan satır varsa orada yazar. Fotoğrafı yeniden çekin.</p>
+<p><strong>Ödeme kolonlarının toplamı genel toplamı tutmuyor.</strong> Bir satır ya unutulmuş ya iki kez sayılmış. Tarif ekranındaki önizlemeden kontrol edin.</p>
+<p><strong>Okuma uzun sürüyor.</strong> Beşten fazla fiş gönderdiyseniz kuyruğa girmiştir. Uygulamayı kapatabilirsiniz; sonuçlar geldikçe ekranda görünür. Çok uzarsa "Beklemeyi bırak" düğmesi çıkar.</p>
+<p><strong>Fotoğraflar ne kadar saklanıyor?</strong> Yedi gün. Okunan veri silinmez — Excel'i istediğiniz zaman yeniden üretebilirsiniz.</p>
+<hr>
+<h2>Yardım</h2>
+<p>Takıldığınız yeri yazın: <strong>afk_34@hotmail.com</strong></p>
+</body>
+</html>

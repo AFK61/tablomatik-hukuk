@@ -5,80 +5,67 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>KVKK Aydınlatma Metni — TabloMatik AI</title>
 <style>
-  :root { color-scheme: light dark; }
+  :root { color-scheme: light dark; --ana: #1f6f4a; --cizgi: #d8d8d2; --soluk: #6b6b66; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ana: #6fbf94; --cizgi: #3a3c3f; --soluk: #a0a09a; }
+  }
   body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
          max-width: 46rem; margin: 0 auto; padding: 2rem 1.2rem 5rem;
          line-height: 1.65; color: #1a1a18; background: #fff; }
   @media (prefers-color-scheme: dark) { body { color: #e8e8e4; background: #17181a; } }
-  h1 { font-size: 1.6rem; }
-  h2 { font-size: 1.2rem; margin-top: 2.2rem; }
-  nav { margin-bottom: 2rem; font-size: .95rem; }
-  nav a { color: #1f6f4a; margin-right: 1rem; }
-  table { border-collapse: collapse; width: 100%; }
-  td, th { border: 1px solid #d8d8d2; padding: .45rem .6rem; text-align: left; }
-  code { background: #f0f0ec; padding: .1rem .3rem; border-radius: 3px; }
+  h1 { font-size: 1.65rem; line-height: 1.25; }
+  h2 { font-size: 1.25rem; margin-top: 2.4rem; }
+  h3 { font-size: 1.05rem; margin-top: 1.8rem; }
+  nav { margin-bottom: 2rem; font-size: .95rem; border-bottom: 1px solid var(--cizgi);
+        padding-bottom: 1rem; }
+  nav a { color: var(--ana); margin-right: 1.2rem; text-decoration: none; }
+  nav a:hover { text-decoration: underline; }
+  nav strong { color: inherit; margin-right: 1.2rem; }
+  blockquote { border-left: 3px solid var(--ana); margin: 1.2rem 0; padding: .2rem 0 .2rem 1rem;
+               color: var(--soluk); }
+  hr { border: none; border-top: 1px solid var(--cizgi); margin: 2.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  td, th { border: 1px solid var(--cizgi); padding: .45rem .6rem; text-align: left; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px;
+         font-size: .92em; }
+  li { margin: .3rem 0; }
 </style>
 </head>
 <body>
-<nav>
-  <a href="index.html">Gizlilik Politikası</a>
-  <a href="kvkk.html">KVKK Aydınlatma Metni</a>
-</nav>
+<nav><a href="index.html">Gizlilik Politikası</a>
+  <strong>KVKK Aydınlatma Metni</strong>
+  <a href="rehber.html">Nasıl kullanılır</a></nav>
 <h1>KVKK Aydınlatma Metni</h1>
 <p><strong>Son güncelleme:</strong> 15 Ağustos 2026</p>
-<p>6698 sayılı Kişisel Verilerin Korunması Kanunu&#x27;nun 10. maddesi uyarınca hazırlanmıştır.</p>
+<p>6698 sayılı Kişisel Verilerin Korunması Kanunu'nun 10. maddesi uyarınca hazırlanmıştır.</p>
 <h2>1. Veri sorumlusu</h2>
-<pre>| | |
-|---|---|
-| Ad Soyad | Ali Fikri KÜÇÜK |
-| Adres | Güven Mahallesi, Lalezar Sokak No: 33/6, Güngören / İstanbul |
-| E-posta | afk_34@hotmail.com |</pre>
-<p>&gt; <strong>Hukukçuya sorulacak:</strong> Muhasebeci kendi müşterisinin verisini işlediği &gt; için bu yapıda veri sorumlusu/veri işleyen ayrımının nasıl kurulacağı &gt; doğrulanmalıdır. Bu taslak, uygulama sahibini <strong>veri işleyen</strong>, muhasebeciyi &gt; <strong>veri sorumlusu</strong> kabul eder.</p>
+<table><thead><tr><th>Ad Soyad</th><th>Ali Fikri KÜÇÜK</th></tr></thead><tbody><tr><td>Adres</td><td>Güven Mahallesi, Lalezar Sokak No: 33/6, Güngören / İstanbul</td></tr><tr><td>E-posta</td><td>afk_34@hotmail.com</td></tr></tbody></table>
+<blockquote><strong>Hukukçuya sorulacak:</strong> Muhasebeci kendi müşterisinin verisini işlediği için bu yapıda veri sorumlusu/veri işleyen ayrımının nasıl kurulacağı doğrulanmalıdır. Bu taslak, uygulama sahibini <strong>veri işleyen</strong>, muhasebeciyi <strong>veri sorumlusu</strong> kabul eder.</blockquote>
 <h2>2. İşlenen kişisel veriler</h2>
-<pre>| Kategori | Veriler |
-|---|---|
-| Kimlik | Ad soyad, mükellef ünvanı, vergi kimlik numarası, TC kimlik numarası |
-| İletişim | E-posta adresi, cep telefonu numarası |
-| Finansal | Fiş ve faturalardaki tutarlar, matrahlar, vergi tutarları, ödeme türü |
-| Görsel | Fiş ve fatura fotoğrafları |
-| İşlem güvenliği | Oturum kayıtları, uygulama sürümü, cihaz modeli, hata kayıtları |</pre>
+<table><thead><tr><th>Kategori</th><th>Veriler</th></tr></thead><tbody><tr><td>Kimlik</td><td>Ad soyad, mükellef ünvanı, vergi kimlik numarası, TC kimlik numarası</td></tr><tr><td>İletişim</td><td>E-posta adresi, cep telefonu numarası</td></tr><tr><td>Finansal</td><td>Fiş ve faturalardaki tutarlar, matrahlar, vergi tutarları, ödeme türü</td></tr><tr><td>Görsel</td><td>Fiş ve fatura fotoğrafları</td></tr><tr><td>İşlem güvenliği</td><td>Oturum kayıtları, uygulama sürümü, cihaz modeli, hata kayıtları</td></tr></tbody></table>
 <h2>3. İşleme amaçları</h2>
 <ul><li>Fiş ve faturalardaki bilgilerin okunup elektronik tabloya (Excel) dönüştürülmesi</li><li>Belgelerin doğru mükellefe ve doğru döneme kaydedilmesi</li><li>Kullanıcı hesabının oluşturulması ve girişin doğrulanması</li><li>Mükellefin yetkili çalışanlarının uygulamaya davet edilmesi</li><li>Hizmetin sürdürülmesi, hataların giderilmesi ve güvenliğin sağlanması</li></ul>
 <h2>4. Hukuki sebepler (KVKK m.5)</h2>
-<pre>| Veri | Hukuki sebep |
-|---|---|
-| E-posta adresi, oturum kayıtları | Sözleşmenin kurulması ve ifası için gerekli olması (m.5/2-c) |
-| Mükellef ünvanı, vergi numarası, fiş içeriği | Sözleşmenin ifası ve veri sorumlusunun meşru menfaati (m.5/2-c, m.5/2-f) |
-| Fiş fotoğrafının, yapay zekâ ile okunup analiz edilmek üzere yurt dışına aktarılması | <strong>Açık rıza</strong> (m.5/1 ve m.9) |
-| Davet edilen kişinin adı ve telefonu | Meşru menfaat (m.5/2-f) |</pre>
-<p>&gt; <strong>Hukukçuya sorulacak:</strong> Yurt dışına aktarım için açık rızanın tek başına &gt; yeterli olup olmadığı, yoksa standart sözleşme veya taahhütname gerekip &gt; gerekmediği doğrulanmalıdır (bkz. §6).</p>
+<table><thead><tr><th>Veri</th><th>Hukuki sebep</th></tr></thead><tbody><tr><td>E-posta adresi, oturum kayıtları</td><td>Sözleşmenin kurulması ve ifası için gerekli olması (m.5/2-c)</td></tr><tr><td>Mükellef ünvanı, vergi numarası, fiş içeriği</td><td>Sözleşmenin ifası ve veri sorumlusunun meşru menfaati (m.5/2-c, m.5/2-f)</td></tr><tr><td>Fiş fotoğrafının, yapay zekâ ile okunup analiz edilmek üzere yurt dışına aktarılması</td><td><strong>Açık rıza</strong> (m.5/1 ve m.9)</td></tr><tr><td>Davet edilen kişinin adı ve telefonu</td><td>Meşru menfaat (m.5/2-f)</td></tr></tbody></table>
+<blockquote><strong>Hukukçuya sorulacak:</strong> Yurt dışına aktarım için açık rızanın tek başına yeterli olup olmadığı, yoksa standart sözleşme veya taahhütname gerekip gerekmediği doğrulanmalıdır (bkz. §6).</blockquote>
 <h2>5. Toplama yöntemi</h2>
 <p>Veriler tamamen otomatik yollarla, mobil uygulama üzerinden, kullanıcının kendisi tarafından girilerek veya fotoğraflanan belgeden okunarak toplanır.</p>
 <h2>6. Aktarım</h2>
 <h3>Yurt içi</h3>
 <p>Aktarım yapılmaz. Resmî makamların hukuka uygun talebi saklıdır.</p>
 <h3>Yurt dışı</h3>
-<pre>| Alıcı | Ülke | Aktarılan veri | Amaç |
-|---|---|---|---|
-| Supabase | <strong>Almanya (Frankfurt)</strong> | Hesap, mükellef, fiş, fotoğraf, Excel | Barındırma ve veri tabanı |
-| Anthropic | <strong>Amerika Birleşik Devletleri</strong> | Fiş fotoğrafı — <strong>yalnızca işlendiği an, saklanmadan</strong> | Belgenin yapay zekâ ile okunup analiz edilmesi |
-| Brevo | <strong>Fransa</strong> | E-posta adresi | Giriş kodu e-postasının iletilmesi |</pre>
-<p><strong>Fiş fotoğrafının, yapay zekâ ile okunup analiz edilmek üzere Amerika Birleşik Devletleri&#x27;ne aktarılması açık rızanıza tabidir.</strong></p>
+<table><thead><tr><th>Alıcı</th><th>Ülke</th><th>Aktarılan veri</th><th>Amaç</th></tr></thead><tbody><tr><td>Supabase</td><td><strong>Almanya (Frankfurt)</strong></td><td>Hesap, mükellef, fiş, fotoğraf, Excel</td><td>Barındırma ve veri tabanı</td></tr><tr><td>Anthropic</td><td><strong>Amerika Birleşik Devletleri</strong></td><td>Fiş fotoğrafı — <strong>yalnızca işlendiği an, saklanmadan</strong></td><td>Belgenin yapay zekâ ile okunup analiz edilmesi</td></tr><tr><td>Brevo</td><td><strong>Fransa</strong></td><td>E-posta adresi</td><td>Giriş kodu e-postasının iletilmesi</td></tr></tbody></table>
+<p><strong>Fiş fotoğrafının, yapay zekâ ile okunup analiz edilmek üzere Amerika Birleşik Devletleri'ne aktarılması açık rızanıza tabidir.</strong></p>
 <p>Bu rıza <strong>uygulamayı kullanmanın şartı değildir.</strong> Rıza vermeden hesabınızı açabilir, mükelleflerinizi ekleyebilir, dönemlerinizi görüntüleyebilir ve daha önce ürettiğiniz Excel dosyalarını indirebilirsiniz. Rıza yalnızca <strong>fiş fotoğrafı okutmak</strong> için istenir ve tam o anda sorulur.</p>
 <p>Rızayı dilediğiniz zaman <strong>Hesap</strong> ekranından geri alabilirsiniz. Geri alındığında yeni fiş okutulamaz; hesabınız, mükellefleriniz ve mevcut dosyalarınız etkilenmez.</p>
 <h2>7. Saklama süreleri</h2>
-<pre>| Veri | Süre |
-|---|---|
-| Fiş ve fatura fotoğrafları | <strong>Yüklendikten 7 gün sonra</strong> kendiliğinden silinir |
-| Fişten okunan bilgiler ve üretilen Excel dosyaları | Kullanıcı silene kadar |
-| Hesap ve mükellef bilgileri | Hesap silinene kadar |
-| Hata ve güvenlik kayıtları | En fazla 12 ay |</pre>
+<table><thead><tr><th>Veri</th><th>Süre</th></tr></thead><tbody><tr><td>Fiş ve fatura fotoğrafları</td><td><strong>Yüklendikten 7 gün sonra</strong> kendiliğinden silinir</td></tr><tr><td>Fişten okunan bilgiler ve üretilen Excel dosyaları</td><td>Kullanıcı silene kadar</td></tr><tr><td>Hesap ve mükellef bilgileri</td><td>Hesap silinene kadar</td></tr><tr><td>Hata ve güvenlik kayıtları</td><td>En fazla 12 ay</td></tr></tbody></table>
 <p>Hesap silindiğinde bütün veriler — fotoğraflar ve Excel dosyaları dahil — kalıcı olarak silinir.</p>
 <h2>8. Haklarınız (KVKK m.11)</h2>
 <p>Veri sorumlusuna başvurarak:</p>
-<p>1. Kişisel verinizin işlenip işlenmediğini öğrenme, 2. İşlenmişse buna ilişkin bilgi talep etme, 3. İşlenme amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme, 4. Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme, 5. Eksik veya yanlış işlenmişse düzeltilmesini isteme, 6. Kanunda öngörülen şartlar çerçevesinde silinmesini veya yok edilmesini    isteme, 7. (5) ve (6) kapsamında yapılan işlemlerin aktarıldığı üçüncü kişilere    bildirilmesini isteme, 8. Münhasıran otomatik sistemlerle analiz edilmesi suretiyle aleyhinize bir    sonuç ortaya çıkmasına itiraz etme, 9. Kanuna aykırı işlenmesi sebebiyle zarara uğramanız hâlinde zararın    giderilmesini talep etme</p>
+<ol><li>Kişisel verinizin işlenip işlenmediğini öğrenme,</li><li>İşlenmişse buna ilişkin bilgi talep etme,</li><li>İşlenme amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme,</li><li>Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme,</li><li>Eksik veya yanlış işlenmişse düzeltilmesini isteme,</li><li>Kanunda öngörülen şartlar çerçevesinde silinmesini veya yok edilmesini isteme,</li><li>(5) ve (6) kapsamında yapılan işlemlerin aktarıldığı üçüncü kişilere bildirilmesini isteme,</li><li>Münhasıran otomatik sistemlerle analiz edilmesi suretiyle aleyhinize bir sonuç ortaya çıkmasına itiraz etme,</li><li>Kanuna aykırı işlenmesi sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme</li></ol>
 <p>haklarına sahipsiniz.</p>
-<p><strong>Başvuru:</strong> Taleplerinizi afk_34@hotmail.com adresine iletebilirsiniz. Başvurular en geç <strong>30 gün</strong> içinde sonuçlandırılır. İşlemin ayrıca bir maliyet gerektirmesi hâlinde Kurul&#x27;ca belirlenen tarifedeki ücret alınabilir.</p>
+<p><strong>Başvuru:</strong> Taleplerinizi afk_34@hotmail.com adresine iletebilirsiniz. Başvurular en geç <strong>30 gün</strong> içinde sonuçlandırılır. İşlemin ayrıca bir maliyet gerektirmesi hâlinde Kurul'ca belirlenen tarifedeki ücret alınabilir.</p>
 <p>Ayrıca hesabınızı ve bütün verilerinizi <strong>uygulama içinden</strong> silebilirsiniz: <strong>Hesap → Hesabımı sil</strong>. Bu, başvuru beklemeden sonuç veren en hızlı yoldur.</p>
 <h2>9. Otomatik karar verme</h2>
 <p>Fişlerdeki bilgiler yapay zekâ modeliyle okunur. <strong>Bu bir otomatik karar verme süreci değildir:</strong> model yalnızca belgedeki yazıyı okur, hakkınızda bir değerlendirme veya sınıflandırma yapmaz. Okunan her alan kullanıcıya gösterilir ve kullanıcı tarafından değiştirilebilir.</p>
