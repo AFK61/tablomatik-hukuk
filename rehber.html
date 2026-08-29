@@ -358,11 +358,37 @@
 <p>Soldan istediğiniz kolonlara dokunun, <strong>▲▼</strong> ile sıralayın. Seçtikleriniz Excel'e <strong>"Özel İstek Sayfası"</strong> adıyla ayrı bir sayfa olarak eklenir; mevcut sayfalar değişmez.</p>
 <p>Muhasebe programınıza aktarırken hangi sütunları hangi sırada istiyorsanız burada kurarsınız.</p>
 <hr>
+<h2>8. Cari hesap takibi: mükellefin borcu ve ödemeleri</h2>
+<p>Mükellef ekranındaki <strong>Cari hesap</strong> düğmesi, o mükellefin size olan borcunu ve yaptığı ödemeleri takip eder. Muhasebe defteri mantığıyla çalışır: aylık aidat <strong>borç</strong>, tahsilat <strong>alacak</strong> yazılır, aradaki fark bakiyedir.</p>
+<h3>Aylık aidatı bir kez tanımlayın</h3>
+<p>Cari ekranında <strong>Aylık aidat</strong> bölümüne tutarı ve hangi aydan itibaren geçerli olduğunu yazın. Geçmiş aylar <strong>anında</strong> borç olarak işlenir; sonraki ayların aidatı her ayın başında kendiliğinden yazılır — her ay elle girmeniz gerekmez.</p>
+<p>Yıl ortasında tutar değişirse yeni tutarı, geçerli olacağı aydan itibaren kaydedin. Daha önce işlenmiş ayların tutarı değişmez.</p>
+<h3>Ödeme aldığınızda</h3>
+<p>İlgili aya girip <strong>Yeni kayıt</strong> deyin, <strong>Alacak</strong> seçin, tutarı ve açıklamayı yazın. Mükellef aidatı parça parça ödeyebilir; aynı aya istediğiniz kadar ödeme girebilirsiniz, bakiye kendiliğinden düşer.</p>
+<h3>Ekstreyi paylaşın</h3>
+<p>Ay ekranında <strong>Yazdır</strong>, <strong>Paylaş</strong> ve <strong>Excel'e al</strong> düğmeleri var. Paylaş dediğinizde telefonunuzdaki uygulamalar listelenir — WhatsApp, e-posta, mesaj. Ekstre PDF olarak gider.</p>
+<p><strong>Alacaklar</strong> sekmesi bütün mükelleflerin bakiyesini tek listede gösterir; <strong>Kazanç</strong> sekmesi seçtiğiniz tarih aralığında ne kestiğinizi ve ne tahsil ettiğinizi özetler. İkisi de yazdırılabilir ve Excel'e alınabilir.</p>
+<h3>Ayı kilitleyin</h3>
+<p>Hesabı biten bir ayı, ay ekranının altındaki <strong>Bu ayı kilitle</strong> düğmesiyle kapatabilirsiniz. Kilitli ayda kayıt eklenemez, değiştirilemez ve silinemez; o aya aylık aidat da yazılmaz. Yanlışlıkla kapanmış bir aya işlem yapmayı önler.</p>
+<p>Kilitli aylar listede <strong>kilitli</strong> yazısıyla görünür. Kilidi istediğiniz an aynı yerden açarsınız.</p>
+<h3>Mükellefiniz kendi hesabını görebilir</h3>
+<p>Mükellef ekranındaki <strong>Cari hesabı görebilsin</strong> ayarını açarsanız, o mükellefe bağlı kişi kendi ekstresini görür, yazdırır ve Excel'e alır — ama <strong>hiçbir kayıt ekleyemez, değiştiremez ve silemez</strong>. Ayar kapalıyken hiçbir şey görmez.</p>
+<p>Varsayılan <strong>kapalıdır</strong>: siz açıkça izin vermedikçe kimse görmez.</p>
+<h3>Kaç mükellef takip edebilirsiniz</h3>
+<table><thead><tr><th>Durumunuz</th><th>Cari hesap açabileceğiniz mükellef</th></tr></thead><tbody><tr><td>Hiç paket almadınız</td><td><strong>1 mükellef</strong> (ücretsiz)</td></tr><tr><td>Son 12 ayda 100 ya da 250 belge paketi aldınız</td><td><strong>10 mükellef</strong></td></tr><tr><td>Son 12 ayda 500 ya da 1.000 belge paketi aldınız</td><td><strong>Sınırsız</strong></td></tr></tbody></table>
+<p>Bu hak, paketi aldığınız günden başlayarak <strong>12 ay</strong> geçerlidir. Belge okuma haklarınızın süresi yoktur; yıllık olan yalnızca cari hesap takibidir.</p>
+<p>Bilmeniz gereken üç şey:</p>
+<ul><li><strong>Sınır yalnızca yeni hesap açmayı durdurur.</strong> Zaten kayıt tuttuğunuz mükelleflere yazmaya devam edersiniz.</li><li><strong>Hiçbir kaydınız silinmez ya da gizlenmez.</strong> Hakkınız dolsa bile bütün geçmişi görür, yazdırır ve Excel'e alırsınız.</li><li><strong>Fiş okutmayı etkilemez.</strong> İstediğiniz kadar mükellef ekleyip belge hakkınız olduğu sürece hepsine fiş okutabilirsiniz; sınır yalnızca cari hesap takibindedir.</li></ul>
+<p>Durumunuz cari ekranının altında her zaman yazılı durur: hangi seviyede olduğunuz, kaç mükellefte kayıt tuttuğunuz ve hakkınızın ne zamana kadar geçerli olduğu.</p>
+<hr>
 <h2>Sık karşılaşılanlar</h2>
 <p><strong>Bir kolon boş çıktı, rakam gelmedi.</strong> Belgedeki ad yanlış okunmuş olabilir. Excel'in "Kontrol Uyarıları" sayfasına bakın; tarifte olup belgede bulunamayan satır varsa orada yazar. Fotoğrafı yeniden çekin.</p>
 <p><strong>Ödeme kolonlarının toplamı genel toplamı tutmuyor.</strong> Bir satır ya unutulmuş ya iki kez sayılmış. Tarif ekranındaki önizlemeden kontrol edin.</p>
 <p><strong>Okuma uzun sürüyor.</strong> Beşten fazla fiş gönderdiyseniz kuyruğa girmiştir. Uygulamayı kapatabilirsiniz; sonuçlar geldikçe ekranda görünür. Çok uzarsa "Beklemeyi bırak" düğmesi çıkar.</p>
 <p><strong>Fotoğraflar ne kadar saklanıyor?</strong> Yedi gün. Okunan veri silinmez — Excel'i istediğiniz zaman yeniden üretebilirsiniz.</p>
+<p><strong>Cari hesapta yeni mükellef açamıyorum.</strong> Mükellef sınırınıza ulaşmışsınızdır. Cari ekranının altındaki kutuda kaç mükellefte kayıt tuttuğunuz ve sınırınız yazar. 500 ya da 1.000 belge paketi alırsanız sınır kalkar. Mevcut kayıtlarınız bu durumdan etkilenmez.</p>
+<p><strong>Belge hakkım duruyor ama cari hesabım kapandı.</strong> İkisinin süresi farklı: belge hakkının süresi yoktur, cari hesap takibi ise son paket alımınızdan itibaren 12 ay geçerlidir. Yeni bir paket aldığınızda cari hakkınız da yeniden 12 ay açılır.</p>
+<p><strong>Aidat girdim ama bir ay boş kaldı.</strong> O ay kilitli olabilir. Kilitli aya aidat yazılmaz; aidatı kaydettiğinizde ekran kaç ayın atlandığını söyler. Kilidi açıp aidatı yeniden kaydedin.</p>
 <hr>
 <h2>Yardım</h2>
 <p>Takıldığınız yeri yazın: <strong>afk_34@hotmail.com</strong></p>
